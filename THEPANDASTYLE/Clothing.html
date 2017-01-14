@@ -11,6 +11,31 @@
 
 	<!-- Latest compiled and minified JavaScript -->	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript">		
+			$(document).ready(function(){
+				$("#text").click(function(){
+					$(this).html("unglorius bastards")
+				})
+				$("#texto").click(function(){
+					$(this).animate({"opacity": "0.5", "margin-right": "10px", "width": "toggle"}, 1000);
+					});
+				$("#button").click(function(){
+					$("#texto").animate({"opacity":"1", "margintop":"10px","height":"toggle"}, 1200);
+				});
+				$("#button2").click(function(){
+					$("#texto").fadeIn(1000);
+				});
+				$("#button3").click(function(){
+					$("#texto").fadeOut(1200);
+				})
+				$("#button4").click(function(){
+					$("#texto").animate({"width":"toggle", "margin-left":"1000px","opacity": "0.5"},1000);
+				})
+			})
+			
+		</script>
+	</script>
 	<title>The panda style</title>
 </head>
 <body>
@@ -29,7 +54,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	     	</button>
-	      	<a class="link" href="https://www.facebook.com/w.adalupej"><img src="pandastyle.jpg" class="image"  alt="avatar" ></a>
+	      	<img src="pandastyle.jpg" class="image" id="panda" alt="avatar" >
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,7 +74,22 @@
 
 	</nav>
 	<div class="col-xs-12">
-		<h1 class="homelegend borde">Follow the panda style</h1>
+		<h1 id="text" class="homelegend borde">Happiness only real when is shared</h1>
+		<h2 id="texto" class="homelegend borde">destroyed</h2>
+		<botones height="100" widht="100%">
+			<button id="button" class="boton">
+				<p>1</p>
+			</button>
+			<button id="button2" class="boton">
+				<p>2</p>
+			</button>
+			<button id="button3" class="boton">
+				<p>3</p>
+			</button>
+			<button id="button4" class="boton">
+				<p>4</p>
+			</button>
+		</botones>
 		<footer><h2 class="identidad col-xs-12 borde">powered by:<a href="https://www.facebook.com/w.adalupej"><img height="150" width="150" class="avatar shadow" src="profileee.jpg" alt="profile"></a></h2>
 		</footer>
 	</div>
